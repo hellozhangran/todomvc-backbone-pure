@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <link rel="shortcut icon" href="http://image.dhgate.com/favicon.ico" type="image/x-icon"/>
+    <script type="text/javascript" src="http://www.dhresource.com/dhs/fob/js/common/lib.js"></script>
+
+    <style>
+        .content{ width:100%; margin:0 auto;}
+        .banner1{height: 150px;width: 100%;position: relative;display: none;}
+        .upLabel{width: 46px;height: 46px;background: url(http://www.dhresource.com/dhs/oth/lp/201412/18/up_light.png) no-repeat;position: absolute;right: 22%;bottom: 24%;cursor: pointer;}
+        .banner2{height: 500px;width:100%;margin: 0 auto;}
+        .bannerContent{width: 990px;margin: 0 auto;position: relative;}
+        .placeholder{height: 375px;}
+        .iconList{width: 990px;margin: 0 auto;}
+        .closeLabel{width: 44px;height: 44px;background: url(http://www.dhresource.com/dhs/oth/lp/201412/18/close.jpg) no-repeat;position: absolute;top: 0%;right: 0%;cursor: pointer;}
+        .iconList>li{width: 148px;height: 95px;margin-left: 8px;margin-right: 8px; float: left;list-style: none;cursor: pointer;background-color: #43ad23;}
+        .iconList>li:hover{background-color: #28880b;}
+
+        .wrap{width: 1230px;margin:0 auto;padding-top: 15px;padding-bottom: 30px;}
+        .wrap_cate{width: 1230px;margin: 0 auto;padding-top: 12px;}
+        .wrap_cate .cate_caption{height: 40px;background-color: #e2e2e2;width: 100%;margin-bottom: 12px;}
+        .wrap_cate .cate_caption .cate_caption_word{margin-left: 15px;}
+        .wrap_cate .cate_caption .cate_caption_word .word_left{float: left;color: #464646;font-size: 24px;}
+        .wrap_cate .cate_caption .cate_caption_word .word_right_viewmore{display: block;float: right;font-size: 16px;margin-top: 10px;margin-right: 14px;}
+
+        .products{width: 1230px;/*height: 334px;*/background-color: #b2b2b2;padding-bottom: 7px;}
+        .products .product{position: relative;border: 3px solid white; width: 232px;height: 317px;float: left;background-color: white; margin-top: 7px;margin-left: 7px;}
+        .pro_label{position: absolute;top:12px;left: -3px;width: 71px;height: 43px;background-image: url(http://www.dhresource.com/thanksgiving/tag.png);font-size: 30px;color: white;}
+        .price_off{margin-left: 3px;}
+        .product_link{display: block;width: 232px;height: 317px;}
+        .product_link:hover{text-decoration: none;}
+        .pro_img{width: 220px;height: 220px;margin-top: 6px;margin-left: 6px;}
+        .pro_title{color: #000000;font-size: 14px;margin-left: 6px;width: 215px;}
+        .pro_price{font-size: 18px;color: #db1500;margin-left: 6px;line-height: 20px;}
+        .pro_piece{font-size: 14px;color: #646464;}
+        .pro_oldPrice{font-size: 14px;color: #8e8e8e;margin-left: 6px;text-decoration: line-through;}
+        .clearfix:after {content: ".";display: block;clear: both;visibility: hidden;line-height: 0;height: 0;}
+        .clearfix {display: inline-block;}
+        html[xmlns] .clearfix {display: block;}
+        * html .clearfix {height: 1%;}
+        @media screen and (max-width: 1280px){
+            .wrap{width: 990px;}
+            .wrap_cate{width: 990px;}
+            .products{width: 990px;/*height:272px;*/}
+            .products .product{border: 2px solid white; width: 186px;height: 251px;}
+            .product_link{width: 186px;height: 251px;}
+            .pro_img{width: 170px;height: 170px;margin-top: 8px;margin-left: 8px;}
+            .pro_title{font-size: 12px;width: 175px;line-height: 16px;}
+            .pro_price{font-size: 18px;line-height: 18px;}
+            .pro_piece{font-size: 12px;}
+            .pro_oldPrice{font-size: 12px;}
+
+            /*  990 header-footer star
+              #wel{width: 990px;margin: 0 auto;}
+              .top-Info,.head-Warp,.navigation,.user-Bookmark,.foot-inner,.foot-website{margin:0 auto;width:990px}
+              .head-SearchBox{margin:2px 288px 0 265px;}
+              .head-search-text{right:289px}
+              .head-Search-keywords input{width:253px}
+              .head-cate-content{right:364px}
+              .head-MyDhgate-List{right:-1px;}
+              .user-riHelp dl{width:150px}
+              .user-Bookmark,.foot-inner{margin-bottom:20px;}
+              990 header-footer end*/
+        }
+        .goTop{ background: url(http://www.dhresource.com/dhs/oth/lp/201405/14/fa.png) no-repeat scroll 12px -196px #CCCCCC;border-radius: 3px; bottom: 20px;display: none; height: 67px;position: fixed; right: 20px; width: 67px;}
+        .goTop:hover{  background-color: #B1C8EF;}
+    </style>
+    <@cms_ssi virtual='/headfoot-css.html'> </@cms_ssi>
+<@cms_ssi virtual='/headfoot-990-css.html'> </@cms_ssi>
+</head>
+<body>
+<@cms_ssi virtual='/header-2014.html'> </@cms_ssi>
+<@cms_ssi virtual='/global/navigation-2014.html'> </@cms_ssi>
+<div id="wel" data-editor="BreadCrumbs">
+    <a href="http://www.dhgate.com">Home</a>
+    <span>&gt;</span>
+    <a href="http://www.dhgate.com/catalog/buy-home.htm">Promotions</a><span>&gt;</span>
+    <@cms_block name="BreadCrumbs" modelid="94";datalist>
+    <#list datalist as bread>
+        <strong>${bread.name}</strong>
+    </#list>
+</@cms_block>
+</div>
+
+<@cms_block name="banner" num="1" modelid="180"; datalist>
+<#assign bannerList = datalist>
+</@cms_block>
+
+<div class="content">
+    <#list bannerList as banner>
+        <div class="banner1" style="background: url(${banner.banner_pic_first}) center top no-repeat;">
+            <div class="upLabel"></div>
+        </div>
+
+        <div class="banner2" style="background: url(${banner.banner_pic_sec}) center top no-repeat;">
+            <div class="bannerContent">
+                <div class="placeholder"></div>
+                <ul class="iconList" data-editor="allcate">
+                    <@cms_block name="category" num="6" modelid="96"; datalist>
+                    <#assign cateList = datalist>
+                        <#list cateList as cate>
+                            <li style="background-image: url(${cate.categoryslink})"></li>
+                        </#list>
+                    </@cms_block>
+                    <div style="clear: both;"></div>
+                    <div class="closeLabel"></div>
+                </ul>
+            </div>
+        </div>
+    </#list>
+
+
+    <div class="wrap" data-editor="content">
+        <@cms_block name="productList"  modelid="95"; datalist>
+        <#assign proList = datalist>
+            <#list cateList as cate>
+                <div class="wrap_cate">
+                    <div class="cate_caption">
+                        <div class="cate_caption_word">
+                            <p class="word_left">${cate.categorysname}</p>
+                            <a class="word_right_viewmore" href="${cate.categorymorelink}">view more ></a>
+                            <div style="clear: both;"></div>
+                        </div>
+                    </div>
+                    <ul class="products">
+                        <#list proList as pro>
+                            <#if pro.parentid == cate.current>
+                                <li class="product">
+                                    <a class="product_link" href="${pro.productlink}#lp_${pro.activityid}-${pro.lpid}-${pro.pos}">
+                                        <img class="pro_img" src="${pro.productimg}" alt="${pro.productname}">
+                                        <p class="pro_title">${pro.productname}</p>
+                                        <p class="pro_price">US $${pro.productpiece}<span class="pro_piece">/${pro.unit}</span></p>
+                                        <p class="pro_oldPrice">US $${pro.listprice} /${pro.unit}</p>
+                                    </a>
+                                    <p class="pro_label"><span class="price_off">${pro.productoff}</span></p>
+                                </li>
+                            </#if>
+                        </#list>
+                        <div style="clear: both;"></div>
+                    </ul>
+                </div>
+            </#list>
+        </@cms_block>
+    </div><!--end of wrap-->
+</div><!--end of content-->
+<a class="goTop"></a>
+<div class="user-help-wrap">
+    <!--#include virtual="/global/bookmark.html" -->
+    <!--#include virtual="/global/foot.html" -->
+</div>
+<!--#include virtual="/analyticsTracking.html" -->
+<script type="text/javascript" src="http://www.dhresource.com/dhs/oth/lp/201405/14/discount.js"></script>
+<script type="text/javascript" src="http://js.dhresource.com/buyer/common/header/head-init.js?v=20140915"></script>
+<!--tracking-->
+<script src="http://www.dhresource.com/dhs/fob/js/common/track/dhta.js" type="text/javascript"></script>
+<script type="text/javascript">
+    (function(){
+        try{
+        <#list proList as proli>
+            <#if proli_index==0>
+                _dhq.push(["setVar", "activity", "${proli.activityid}"]);
+                _dhq.push(["setVar", "lpid", "${proli.lpid}"]);
+                _dhq.push(["setVar", "pt", "lp"]);
+                _dhq.push(["event", "Public_S0003"]);
+           </#if>
+        </#list>
+        } catch(e){}
+    })();
+</script>
+<!--tracking-->
+
+<!--jquery BEGIN-->
+<script type="text/javascript">
+    $(".closeLabel").click(function(){
+        $(".banner2").hide('fast');
+        $(".banner1").show('fast');
+    });
+    $(".banner1").click(function(){
+        $(".banner2").show('fast');
+        $(".banner1").hide('fast');
+    });
+
+    $(".iconList>li").click(function(){
+        $(".banner2").hide();
+        $(".banner1").show();
+        var indexIcon = $(".iconList>li").index($(this));
+        var topHeight = $(".wrap_cate").eq(indexIcon).offset().top;
+        $("html,body").animate({scrollTop:topHeight},200);
+    });
+    $(".goTop").click(function() {
+        $("html,body").animate({ scrollTop:0},200);
+    });
+</script>
+<!--jquery END-->
+</body>
+</html>
