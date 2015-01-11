@@ -1,18 +1,5 @@
-html,
-body {
-	margin: 0;
-	padding: 0;
-}
-
-button {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	background: none;
-	font-size: 100%;
-	vertical-align: baseline;
-	font-family: inherit;
-	color: inherit;
+html,body {margin: 0;padding: 0;}
+button {margin: 0;padding: 0;border: 0;background: none;font-size: 100%;vertical-align: baseline;font-family: inherit;color: inherit;
 	-webkit-appearance: none;
 	-ms-appearance: none;
 	-o-appearance: none;
@@ -24,7 +11,7 @@ body {
 	line-height: 1.4em;
 	background: #eaeaea url('bg.png');
 	color: #4d4d4d;
-	width: 550px;
+	width: 450px;
 	margin: 0 auto;
 	-webkit-font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
@@ -33,8 +20,7 @@ body {
 	font-smoothing: antialiased;
 }
 
-button,
-input[type="checkbox"] {
+button,input[type="checkbox"] {
   outline: none;
 }
 
